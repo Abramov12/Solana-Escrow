@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #1d2538 0%,
+      #0a0d14 45%,
+      #06080d 100%
+    );
+
+  color: white;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.header {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  border-bottom: 1px solid #252b38;
+
+  background: rgba(10, 13, 20, 0.8);
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.network {
+  font-size: 12px;
+  color: #8e99ad;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  padding: 70px 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 32px;
+
+  border: 1px solid #282e3b;
+  border-radius: 20px;
+
+  background: rgba(19, 23, 33, 0.95);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.card h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-bottom: 30px;
+
+  color: #9ca6b8;
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-bottom: 25px;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  background: #10141d;
+
+  font-size: 13px;
+  color: #aab3c2;
+}
+
+.wallet-info span {
+  overflow: hidden;
+
+  color: white;
+  text-overflow: ellipsis;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 18px;
+
+  font-size: 14px;
+  color: #c0c7d2;
+}
+
+input {
+  width: 100%;
+
+  padding: 14px;
+
+  border: 1px solid #343b49;
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #0d1119;
+  color: white;
+}
+
+input:focus {
+  border-color: #7b61ff;
+}
+
+.token-box {
+  margin-top: 20px;
+  padding: 20px;
+
+  border: 1px solid #272d38;
+  border-radius: 14px;
+
+  background: #111620;
+}
+
+.token-box h3 {
+  margin-top: 0;
+}
+
+.swap-arrow {
+  margin: 15px;
+
+  text-align: center;
+  font-size: 25px;
+  color: #8d79ff;
+}
+
+.create-button {
+  width: 100%;
+
+  margin-top: 25px;
+  padding: 15px;
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  background: linear-gradient(
+    135deg,
+    #6f55ff,
+    #9d62ff
+  );
+
+  color: white;
+
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.create-button:hover {
+  opacity: 0.9;
+}
+
+.create-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
